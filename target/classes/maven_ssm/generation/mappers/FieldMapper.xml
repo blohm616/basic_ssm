@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="maven_ssm.generation.mappers.FieldMapper">
+
+	<resultMap type="maven_ssm.generation.entity.FieldEntity" id="fieldEntityMap">
+		<result column="Field" property="field"/>
+		<result column="Type" property="type"/>
+		<result column="Collation" property="collation"/>
+		<result column="Key" property="key"/>
+		<result column="Extra" property="extra"/>
+		<result column="Comment" property="comment"/>
+	</resultMap>
+	
+	
+    <select id="findFieldByTable" resultMap="fieldEntityMap" parameterType="java.util.Map" statementType="CALLABLE">
+      <![CDATA[
+
+           {call code_sql(
+
+              #{codeSql,mode=IN,jdbcType=VARCHAR}
+
+           )}    
+
+       ]]>
+
+    </select>
+</mapper>

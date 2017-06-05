@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="basic_ssm Maven Webapp"
+  id="myeclipse.1494309248277"
+  context-root="/basic_ssm"
+  j2ee-spec="6.0"
+  archive="basic_ssm Maven Webapp.war">
+  <attributes>
+    <attribute name="webrootdir" value="&lt;prjroot&gt;" />
+  </attributes>
+</project-module>
+
