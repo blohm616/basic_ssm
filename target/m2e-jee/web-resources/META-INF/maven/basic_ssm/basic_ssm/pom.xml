@@ -6,7 +6,7 @@
 	<artifactId>basic_ssm</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ssm_pro Maven Webapp</name>
+	<name>basic_ssm Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
@@ -228,20 +228,6 @@
  -->
 	<!-- 配置tomcat -->
 	<build>
-		<finalName>ssm_pro</finalName>
-		<plugins>
-			<plugin>  
-			      <groupId>org.apache.tomcat.maven</groupId>  
-			      <artifactId>tomcat7-maven-plugin</artifactId>  
-			      <version>2.2</version>  
-			      <configuration>  
-			             <port>8080</port>  
-			             <path>/basic_ssm</path>  
-			             <uriEncoding>UTF-8</uriEncoding>  
-			             <finalName>basic_ssm</finalName>  
-			             <server>tomcat7</server>  
-			      </configuration>  
-			</plugin>  
-		</plugins>
+		<finalName>basic_ssm</finalName>
 	</build>
 </project>

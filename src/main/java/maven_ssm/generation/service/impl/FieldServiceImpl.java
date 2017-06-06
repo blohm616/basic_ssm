@@ -21,7 +21,8 @@ public class FieldServiceImpl implements FieldService {
 	@Override
 	public List<FieldEntity> findFieldByTable(String tableName) {
 		Map<String,String> map = new HashMap<String,String>();
-		map.put("codeSql", "SHOW FULL FIELDS FROM " + tableName);
+		map.put("tableName", tableName);
+		
 		return fieldMapper.findFieldByTable(map);
 	}
 	

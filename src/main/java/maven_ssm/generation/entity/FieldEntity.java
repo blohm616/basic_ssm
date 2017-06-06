@@ -25,6 +25,26 @@ public class FieldEntity implements Serializable {
 	
 	private String comment;
 
+	private String javaType;
+	
+	private String javaField;
+	
+	public String getJavaType() {
+		return javaType;
+	}
+
+	public void setJavaType(String javaType) {
+		this.javaType = javaType;
+	}
+
+	public String getJavaField() {
+		return javaField;
+	}
+
+	public void setJavaField(String javaField) {
+		this.javaField = javaField;
+	}
+
 	public String getField() {
 		return field;
 	}

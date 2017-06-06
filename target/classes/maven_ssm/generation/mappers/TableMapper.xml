@@ -7,16 +7,12 @@
 		<result column="Comment" property="comment"/>
 	</resultMap>
 
-    <select id="findAllTables" resultMap="tableEntityMap" parameterType="java.util.Map" statementType="CALLABLE">
-      <![CDATA[
-
+    <select id="findAllTables" resultMap="tableEntityMap" parameterType="java.util.Map">
+      <!-- <![CDATA[
            {call code_sql(
-
               #{codeSql,mode=IN,jdbcType=VARCHAR}
-
            )}    
-
-       ]]>
-
+       ]]> -->
+		SHOW TABLE STATUS
     </select>
 </mapper>

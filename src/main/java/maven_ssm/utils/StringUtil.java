@@ -28,7 +28,7 @@ public class StringUtil {
 	 */
 	public String replaceChar(String strVal, String tag) {
         StringBuffer sb = new StringBuffer();  
-        sb.append(strVal);  
+        sb.append(strVal.toLowerCase());  
         int count = sb.indexOf(tag);  
         while(count!=0){  
             int num = sb.indexOf(tag,count);  
@@ -42,5 +42,25 @@ public class StringUtil {
         }  
       String ss = sb.toString().replaceAll(tag,"");  
       return ss;
+	}
+	
+	/**
+	 * 
+	 *	version:将字符串首字母大写
+	 *	@param strVal
+	 *	@return
+	 *----------------------
+	 * 	author:xiezhyan
+	 *	date:2017-6-6
+	 */
+	public String firstUpperCase(String strVal) {
+		StringBuffer sb = new StringBuffer();
+		if(null != strVal && !"".equals(strVal)) {
+			sb.append(String.valueOf(strVal.charAt(0)).toUpperCase());
+			for(int i = 1; i < strVal.length(); i++) {
+				sb.append(strVal.charAt(i));
+			}
+		}
+		return sb.toString();
 	}
 }

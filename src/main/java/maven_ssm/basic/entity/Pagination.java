@@ -11,14 +11,6 @@ public class Pagination {
 	//查询结果总条数
 	private int pageCount;
 	
-	public int getPageCount() {
-		return pageCount;
-	}
-
-	public void setPageCount(int pageCount) {
-		this.pageCount = pageCount;
-	}
-
 	public int getStartPage() {
 		return (currentIndex - 1) * pageSize;
 	}
@@ -28,6 +20,14 @@ public class Pagination {
 		this.currentIndex = currentIndex;
 	}
 
+	public int getPageCount() {
+		return pageCount;
+	}
+
+	public void setPageCount(int pageCount) {
+		this.pageCount = pageCount;
+	}
+	
 	public int getPageSize() {
 		return pageSize;
 	}

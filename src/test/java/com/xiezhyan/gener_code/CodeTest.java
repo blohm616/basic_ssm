@@ -8,6 +8,7 @@ import java.util.Map;
 import maven_ssm.utils.FileUtil;
 import maven_ssm.utils.FreemarkerUtil;
 import maven_ssm.utils.LogUtil;
+import maven_ssm.utils.StringUtil;
 import maven_ssm.utils.XmlUtil;
 
 import org.junit.Test;
@@ -44,5 +45,12 @@ public class CodeTest {
 				LogUtil.i(entry.getKey() + ":::" + entry.getValue());
 			}
 		}
+	}
+	
+	@Test
+	public void stringTest() {
+		String str  = "";
+		
+		System.out.println(StringUtil.getInstance().firstUpperCase(str));
 	}
 }
