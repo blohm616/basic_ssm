@@ -228,7 +228,7 @@
  -->
 	<!-- 配置tomcat -->
 	<build>
-		<finalName>ssm_pro</finalName>
+		<finalName>basic_ssm</finalName>
 		<plugins>
 			<plugin>  
 			      <groupId>org.apache.tomcat.maven</groupId>  
