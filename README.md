@@ -12,6 +12,7 @@
 #### dubbo-admin
   1. 将war包复制到tomcat webapp下
   2. 密码在dubbo.properties中
+  
 ** dubbo的环境必须是JDK1.7和TOMCAT7 **
 
 
